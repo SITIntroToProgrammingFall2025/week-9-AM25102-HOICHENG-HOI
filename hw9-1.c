@@ -16,8 +16,9 @@ int main()
 	{
 		for(j=0; j<2; j++)
 		{
-			printf("%d ", [i][j]);
+			printf("%d ", a[i][j]);
 		}
+}
 	d=a[0][0]*a[1][1]-a[0][1]*a[1][0];
 	printf("Determinant is %lf\n", d);
 	return 0;
