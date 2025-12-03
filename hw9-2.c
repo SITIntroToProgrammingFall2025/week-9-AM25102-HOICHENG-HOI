@@ -22,7 +22,7 @@ int main()
 	printf("Output\n");
 	for(i=0; i<3; i++)
 	{
-		for(j=2; j>=0; j++)
+		for(j=2; j>=0; j--)
 		{
 			printf("%d ", a[i][j]);
 		}
