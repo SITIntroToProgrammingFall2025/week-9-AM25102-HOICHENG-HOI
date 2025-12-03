@@ -18,6 +18,7 @@ int main()
 		{
 			printf("%d ", a[i][j]);
 		}
+		printf("\n");
 	}
 	printf("Output\n");
 	for(i=0; i<3; i++)
