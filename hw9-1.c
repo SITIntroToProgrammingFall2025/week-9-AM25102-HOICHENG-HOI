@@ -10,7 +10,8 @@ int main()
 		for(j=0; j<2; j++)
 		{
 			scanf("%d", &a[i][j]);
-		}	
+		}
+	}	
 	printf("You entered:\n");
 	for(i=0; i<2; i++)
 	{
@@ -18,7 +19,7 @@ int main()
 		{
 			printf("%d ", a[i][j]);
 		}
-}
+	}
 	d=a[0][0]*a[1][1]-a[0][1]*a[1][0];
 	printf("Determinant is %lf\n", d);
 	return 0;
