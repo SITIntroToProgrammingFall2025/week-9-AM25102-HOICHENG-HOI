@@ -48,7 +48,7 @@ int main()
                 c[i][j] += a[i][k] * b[k][j];
             }
             
-            printf("%d ", c[i][j]);
+            printf("%lf ", c[i][j]);
         }
         printf("\n");
 	return 0;
