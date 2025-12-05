@@ -4,13 +4,10 @@ int main()
 {
 	int a[5], b[5];
 	int i, j=0;
-	printf("Input array:\n");
 	for(i=0; i<5; i++)
 	{
 		scanf("%d", &a[i]);
 	}
-	printf("Input array:\n");
-
 
 	 for(i = 0; i < 5; i++)
     {
