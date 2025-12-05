@@ -13,9 +13,9 @@ int main()
 
 	if(x==0&&y==0&&z==0){printf("The nearest color is Black\n");}
 	if(x==1&&y==0&&z==0){printf("The nearest color is Red\n");}
-	if(x==0&&y==1&&z==0){printf("The nearest color is Black\n");}
-	if(x==0&&y==0&&z==1){printf("The nearest color is Black\n");}
-	else{printf("The nearest color is Black\n");}
+	if(x==0&&y==1&&z==0){printf("The nearest color is Green\n");}
+	if(x==0&&y==0&&z==1){printf("The nearest color is Blue\n");}
+	else{printf("The nearest color is White\n");}
 
 	return 0;
 }
