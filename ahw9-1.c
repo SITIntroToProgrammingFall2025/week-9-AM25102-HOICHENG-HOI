@@ -7,9 +7,9 @@ int main()
 	scanf("%d", &g);
 	scanf("%d", &b);
 
-	if(r>127){x=1;}
-	if(g>127){y=1;}
-	if(b>127){z=1;}
+	if(255-r<127){x=1;}
+	if(255-g>127){y=1;}
+	if(255-b>127){z=1;}
 
 	if(x==0&&y==0&&z==0){printf("The nearest color is Black\n");}
 	if(x==1&&y==0&&z==0){printf("The nearest color is Red\n");}
