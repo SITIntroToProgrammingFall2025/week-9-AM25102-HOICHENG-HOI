@@ -19,7 +19,7 @@ int main()
 			scanf("%d", &b[i][j]);
 		}
 	}	
-	printf("The first matrix  you entered is\n");
+	printf("The first matrix you entered is\n");
 	for(i=0; i<2; i++)
 	{
 		for(j=0; j<3; j++)
@@ -28,7 +28,7 @@ int main()
 		}
 		printf("\n");
 	}
-	printf("The second matrix  you entered is\n");
+	printf("The second matrix you entered is\n");
 	for(i=0; i<2; i++)
 	{
 		for(j=0; j<2; j++)
@@ -44,14 +44,14 @@ int main()
 	{
 		for(j=0; j<2; j++)  
 		{
-		c[i][j] = 0;
-		for(k=0; k<3; k++)
-          	  {
-                c[i][j] += a[i][k] * b[k][j];
-          	  }
+			c[i][j] = 0;
+			for(k=0; k<3; k++)
+          	 	 {
+             			c[i][j] += a[i][k] * b[k][j];
+          		 }
             
-            printf("%.1g ", c[i][j]);
-      	  }
+          	  	printf("%.1g ", c[i][j]);
+      		}
 	}
         printf("\n");
 	return 0;
