@@ -11,11 +11,28 @@ int main()
 	if(255-g<127){y=1;}
 	if(255-b<127){z=1;}
 
-	if(x==0&&y==0&&z==0){printf("The nearest color is Black\n");}
-	else if(x==1&&y==0&&z==0){printf("The nearest color is Red\n");}
-	else if(x==0&&y==1&&z==0){printf("The nearest color is Green\n");}
-	else if(x==0&&y==0&&z==1){printf("The nearest color is Blue\n");}
-	else{printf("The nearest color is White\n");}
-
-	return 0;
+	int count = x + y + z;
+	if (count == 0) {
+        	printf("The nearest color is Black\n");
+	}
+    else if (count == 1) {
+        if (x == 1 && y == 0 && z == 0) {
+            printf("The nearest color is Red\n");
+        }
+        else if (x == 0 && y == 1 && z == 0) {
+            printf("The nearest color is Green\n");
+        }
+        else if (x == 0 && y == 0 && z == 1) {
+            printf("The nearest color is Blue\n");
+        }
+        else {
+            printf("The nearest color is White\n"); 
+        }
+    }
+    else { 
+        printf("The nearest color is White\n");
+    }
+    
+    return 0;
 }
+
