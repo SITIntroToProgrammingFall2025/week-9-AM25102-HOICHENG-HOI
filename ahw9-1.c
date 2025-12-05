@@ -7,32 +7,21 @@ int main()
 	scanf("%d", &g);
 	scanf("%d", &b);
 
-	if(255-r<127){x=1;}
-	if(255-g<127){y=1;}
-	if(255-b<127){z=1;}
+    int d_black = r*r + g*g + b*b;
+    int d_red = (255-r)*(255-r) + g*g + b*b;
+    int d_green = r*r + (255-g)*(255-g) + b*b;
+    int d_blue = r*r + g*g + (255-b)*(255-b);
+    int d_white = (255-r)*(255-r) + (255-g)*(255-g) + (255-b)*(255-b);
 
-	int count = x + y + z;
-	if (count == 0) {
-        	printf("The nearest color is Black\n");
-	}
-    else if (count == 1) {
-        if (x == 1 && y == 0 && z == 0) {
-            printf("The nearest color is Red\n");
-        }
-        else if (x == 0 && y == 1 && z == 0) {
-            printf("The nearest color is Green\n");
-        }
-        else if (x == 0 && y == 0 && z == 1) {
-            printf("The nearest color is Blue\n");
-        }
-        else {
-            printf("The nearest color is White\n"); 
-        }
-    }
-    else { 
-        printf("The nearest color is White\n");
-    }
+    int min = d_black;
+    char* color = "Black";
+    
+    if (d_red < min) { min = d_red; color = "Red"; }
+    if (d_green < min) { min = d_green; color = "Green"; }
+    if (d_blue < min) { min = d_blue; color = "Blue"; }
+    if (d_white < min) { min = d_white; color = "White"; }
+    
+    printf("The nearest color is %s\n", color);
     
     return 0;
 }
-
