@@ -6,7 +6,7 @@ int main() {
 	scanf("%d", &g);
 	scanf("%d", &b);
 
-	printf("#%02X%02X%02X\n", r, g, b);
+	printf("The hex code is #%02X%02X%02X\n", r, g, b);
 
 	return 0;
 }
