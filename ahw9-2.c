@@ -26,7 +26,7 @@ int main()
         }
     }
     
-    printf("Sorted array:\n");
+    printf("sorted array:\n");
     for(i = 0; i < 5; i++)
     {
         printf("%d ", b[i]);
