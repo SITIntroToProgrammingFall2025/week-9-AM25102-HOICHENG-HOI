@@ -38,7 +38,7 @@ int main()
 		}
 		printf("\n");
 	}
-	printf("The multiplication product of matrix A and matrix B: \n");
+	printf("The multiplication product of matrix A and matrix B:\n");
 
 
 	for(i=0; i<2; i++)
@@ -54,6 +54,7 @@ int main()
           	  	if (c[i][j]==(int)c[i][j]) {printf("%.0f ", c[i][j]);}
 			else{printf("%.1lf ", c[i][j]);}
       		}
+		printf("\n");
 	}
         printf("\n");
 	return 0;
