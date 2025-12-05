@@ -23,7 +23,7 @@ int main()
 	{
 		for(j=0; j<3; j++)
 		{
-			if a[i][j]==(int)a[i][j] {printf("%d ", a[i][j]);}
+			if (a[i][j]==(int)a[i][j]) {printf("%d ", a[i][j]);}
 			else{printf("%.1lf ", a[i][j]);}
 		}
 		printf("\n");
@@ -33,7 +33,7 @@ int main()
 	{
 		for(j=0; j<2; j++)
 		{
-			if b[i][j]==(int)b[i][j] {printf("%d ", b[i][j]);}
+			if (b[i][j]==(int)b[i][j]) {printf("%d ", b[i][j]);}
 			else{printf("%.1lf ", b[i][j]);}
 		}
 		printf("\n");
@@ -51,7 +51,7 @@ int main()
              			c[i][j] += a[i][k] * b[k][j];
           		 }
             
-          	  	if c[i][j]==(int)c[i][j] {printf("%d ", c[i][j]);}
+          	  	if (c[i][j]==(int)c[i][j]) {printf("%d ", c[i][j]);}
 			else{printf("%.1lf ", c[i][j]);}
       		}
 	}
